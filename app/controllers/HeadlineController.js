@@ -5,6 +5,12 @@ class HeadlineController {
 		this.tableName = "articles";
 	}
 
+	/**
+	 * Fetches headlines based on given offset and limit. By Default fetches everything.
+	 * @param  {int, optional} offset SQL offset
+	 * @param  {int, optional} limit  SQL limit
+	 * @return {Promise}        Promise that resolves to JSON array containing headlines
+	 */
 	async getHeadlines(offset = null, limit = null) {
 		var offset = offset == null ? "0" : offset + "";
 		var limit = limit == null ? "" : limit + "";

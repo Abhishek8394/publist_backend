@@ -1,3 +1,7 @@
+/**
+ * Populates the articles table
+ */
+
 var articles = require("./data/headlines");
 const TABLE_NAME = "articles";
 const INSERT_QUERY =

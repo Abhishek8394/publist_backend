@@ -5,7 +5,7 @@ const userController = new UserControllerClass();
  * Determines if  userId and token combo is valid or not.
  * @param  {String}  userId  user id
  * @param  {String}  token  token for the user
- * @return {Boolean}        true if valid id-token pair else false.
+ * @return {Promise}        that resolves to true if valid id-token pair else false.
  */
 async function isAuthenticated(userId, token) {
 	return new Promise(async (resolve, reject) => {

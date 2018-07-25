@@ -1,3 +1,7 @@
+/**
+ * Populates the Users table
+ */
+
 var users = require("./data/userData");
 module.exports = function populateUsers(client) {
 	console.log(users);
