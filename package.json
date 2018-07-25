@@ -4,14 +4,19 @@
   "description": "Back end client for publist API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",    
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "micro",
-    "dev": "micro-dev"
+    "dev": "micro-dev",
+    "migrate": "node-pg-migrate",
+    "seed": "node seeder.js"
   },
   "author": "Abhishek Patel",
   "license": "MIT",
   "dependencies": {
+    "knex": "^0.15.2",
     "micro": "^9.3.2",
+    "node-pg-migrate": "^3.8.1",
+    "pg": "^7.4.3",
     "request": "^2.87.0"
   },
   "devDependencies": {
